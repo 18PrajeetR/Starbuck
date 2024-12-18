@@ -1,0 +1,527 @@
+/* General Reset for Responsive Layout */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Navigation */
+.nav {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Adjust firsthalf and secondhalf in nav for smaller devices */
+.firsthalf {
+    flex-wrap: wrap;
+}
+.secondhalf {
+    margin-left: auto; /* Prevent overflow */
+}
+
+/* Responsive Hero Section */
+.herodiv h3 {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+    padding-left: 20px;
+}
+.imagediv {
+    width: 100%; /* Full width on smaller devices */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* Remove side margins */
+    padding: 20px;
+}
+
+/* Responsive Text Section */
+.textdiv {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+    width: 90%; /* Adjust width for smaller devices */
+}
+.textdiv p {
+    font-size: 0.9rem; /* Reduce font size */
+}
+
+/* Adjust Buttons */
+.button1, .button2, .textdiv button {
+    width: auto; /* Dynamic button width */
+    font-size: 0.9em; /* Smaller font size for buttons */
+}
+
+/* Responsive Main Container */
+.maincontainer {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+}
+.maincontainer h1 {
+    margin-left: 0; /* Center-align */
+}
+
+/* Responsive Freediv */
+.freediv ul {
+    flex-wrap: wrap; /* Allow wrapping */
+    margin-left: 0; /* Center-align list */
+    justify-content: center;
+}
+.freediv li {
+    font-size: 1.2em; /* Slightly smaller font */
+}
+
+/* Responsive Customize Section */
+.customize p {
+    margin-left: 5%; /* Dynamic margins */
+    width: auto; /* Adjust to fit screen */
+}
+
+/* Responsive Elderone Section */
+.elderone {
+    flex-direction: column; /* Stack on smaller screens */
+}
+.child1, .child2, .child3 {
+    max-width: 100%; /* Full width */
+    margin: 0 auto; /* Center-align */
+}
+.child2 img, .child3 img {
+    width: 100px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* General Media Queries */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack nav items */
+        align-items: center;
+    }
+    .firsthalf ul {
+        justify-content: center;
+    }
+    .secondhalf {
+        margin: 10px 0; /* Add spacing */
+    }
+    .textdiv {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    .maincontainer {
+        margin-bottom: 50px;
+    }
+    .freediv li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        font-size: 0.8em; /* Smaller font */
+    }
+    .firsthalf li, .secondhalf p {
+        font-size: 0.7em;
+    }
+    .imagediv {
+        height: auto;
+        padding: 10px;
+    }
+    .textdiv {
+        font-size: 0.8rem;
+    }
+    .button1, .button2, .textdiv button {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+    .maincontainer h1 {
+        font-size: 1.5rem;
+    }
+    .child2 img, .child3 img {
+        width: 80px; /* Smaller images */
+    }
+}
+.nav{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    position: sticky;
+    z-index: 1000;
+   
+}
+.image{
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    margin-left: 15px;
+}
+.firsthalf{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.firsthalf ul{
+    display: flex;
+    flex-direction: row;
+}
+.firsthalf li{
+    list-style: none;
+   margin: 5px;
+   margin-top:10px;
+   font-size: 0.8em;
+   font-weight: 800;
+   color: #7c7c7c;
+
+}
+.secondhalf{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #d4d4d4;
+    vertical-align: middle;
+   
+}
+.secondhalf img{
+    vertical-align: middle;
+}
+.secondhalf p{
+    margin-top: 17px;
+    margin-right: 40px;
+    color: #5a5a5a;
+}
+.button1{
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 20px;
+    margin: 15px;
+    border: 2px solid hsl(0, 0%, 35%);
+    background-color: white;
+    font-size: 1em;
+    width: 90px;
+    height: 30px;
+    color:#5a5a5a;
+    font-weight: bold;
+}
+.button2{
+    padding-bottom: 10px;
+    padding-top: 7px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 1em;
+    width: 90px;
+    height: 30px;
+    color:#f1f8f6;
+    font-weight: bold;
+    margin: 15px 0px;
+    border: none;
+}
+.herodiv{
+    width: 100vw;
+    height: 50px;
+    background-color: #1e3932;
+    margin-bottom: 20px;
+
+}
+.herodiv h3{
+    color:#f3f1e7;
+    font-size: 0.9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 18px;
+    padding-left: 100px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+.con1{
+    height: 5px;
+    width: 60px;
+    background-color: #008248;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 160px;
+    margin-bottom: -14px;
+    margin-top: -15px;
+}
+.imagediv{
+    background-image: url(starbucks-rewards-benefits-1.jpg);
+    background-position: leftt 80%;
+    background-size:cover;
+     height: 80vh;
+     width: 40vw;
+     margin-left: 40%;
+     padding: 20px;
+     padding: 32px;
+}
+.connectdiv{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+   justify-content: end;
+    background-color: #d4e9e2;
+   padding-bottom: -80%;
+   margin-top: -20px;
+   margin-bottom: 50px;
+}
+.textdiv{
+    font-size: 1.15rem;
+    font-weight: 100;
+    margin-right: 20px;
+    padding: 20px;
+    margin-top: 15%;
+    max-width:40%;
+    color: hsl(0, 0%, 19%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+} 
+.textdiv p{
+    font-size: 1.05rem;
+    font-weight: 550;
+    color:#302f2f;
+} 
+.textdiv button{
+    padding-bottom: 8px;
+    padding-top: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 20px;
+    background-color: #008248;
+    font-size: 1rem;
+    width: 100px;
+    height: 35px;
+    color:#f1f8f6;
+    font-weight: bold;
+    margin-top: -13px;
+    margin-bottom: 5px;
+    border: none;
+}
+.textdiv a:visited,:link
+{
+    color: #302f2f;
+}
+.main p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+.main h3{
+    text-align: center;
+    color: hsl(0, 0%, 10%);
+    font-weight: bold;
+    font-size: 2em;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+.maincontainer h1{
+    text-align: center;
+    color: #008248; 
+    border-radius: 50%;
+    border: 2px solid #008248; 
+    width: 45px;
+    height: 35px;
+    margin-left: 45%;
+    margin-top: 10px;
+    padding-bottom:10px;
+    vertical-align: middle;
+    font-size: 2.5rem;
+}
+.maincontainer h2{
+    color: #5a5a5a;
+    font-size: 1.2rem;
+}
+.subdiv{
+max-width: 33.333%;
+text-align: center;
+padding: 10px;
+font-size: 1.2rem;
+margin: 10px;
+}
+.subdiv a:visited,:link{
+    color: #008248;
+}
+.freediv{
+    background-color: #f1f8f6;
+    text-align: center;
+}
+.freediv h3{
+    font-size: 2em;
+    padding-top: 20px;
+    color: hsl(0, 1%, 15%)
+}
+.freediv ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left:35%;
+}
+.freediv li{
+    list-style: none;
+    margin: 10px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.freediv img{
+    height: 10px;
+    width: 10px;
+}
+
+.customize{
+  background-color:  #d4e9e2;
+  margin-top: -20px;
+  margin-bottom: 50px;
+
+}
+.customize h2{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    margin-left: 37%;
+    color: #252525;
+}
+.customize p{
+   font-size: 1.05em;
+   text-align: left;
+   margin-left: 60%;
+   max-width: 300px;
+   color: #252525;
+   font-weight: 550;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+.extradiv{
+    margin-top: 150px;
+    
+}
+.extradiv h2{ 
+    font-weight: bold;
+    font-size: 2rem;
+    color: hsl(0, 0%, 10%);
+    margin-left: 40px;
+    text-align: center;
+}
+.extradivp{
+    font-size: 1.2rem;
+    max-width: 43%;
+    margin-left: 30%;
+    margin-top: 2%;
+   line-height: 30px;
+   text-align: center;
+}
+.bucksdiv{
+    display: flex;
+    margin-top: 75px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+   
+}
+.buck1{
+   text-align: center;
+   max-width: 33.33%;
+   
+}
+.buck1 img{
+    width: 100px;
+    height: 100px;
+}
+.buck1 h3{
+    font-size: 1.5rem;
+}
+.buck1 p{
+    font-size: 1.15rem;
+    padding: 10px;
+    max-width: 75%;
+    margin-left: 10%;
+    text-align: center;
+} 
+.buck1 a{
+    font-size: 1.05rem;
+}
+.buck1  a:visited,:link{
+    color: #008248;
+}
+.parent{
+    background-color: #f3f1e7;
+    max-width: 100vw;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.parent h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 50px;
+    color: hsl(0, 0%, 5%);
+}
+.p1{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 25px;
+    max-width: 45%;
+    margin-left: 27.5%;
+    margin-bottom: 75px;
+}
+.elderone{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.child1{
+    margin-left: 2.5%;
+    max-width: 30%;
+    font-size: 1.25rem;
+}
+.child1 p{
+    color:hsl(0, 0%, 10%);
+    font-size: 1.2rem;
+}
+.child2{
+    display: flex;
+    max-width: 30%;
+    font-size: 1.2rem;
+    margin-left: 10%;
+}
+.child2 img,.child3 img{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+.child3{
+    display: flex;
+    max-width: 30%;
+    font-size: 1.2rem;
+}
+
+.oneA{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.oneA h3{
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.oneA p{
+   margin-top: -10px;
+   text-align: justify;
+   margin-right: 20px;
+   padding-right: 10px;
+   line-height: 22px;
+}
+.threeimg{
+  margin-left: -15px;
+}
+.oneimg{
+    margin-left: 10px;
+}
+.twoimg{
+    margin-left: 15px;
+}
+.fourimg{
+    margin-left: 5px;
+}
